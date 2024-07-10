@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\Eticaret\\Eticaret\\Eticaret.csproj",
+      "projectUniqueName": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\Eticaret.csproj",
       "projectName": "Eticaret",
-      "projectPath": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\Eticaret\\Eticaret\\Eticaret.csproj",
+      "projectPath": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\Eticaret.csproj",
       "packagesPath": "C:\\Users\\Muhammet Canlı\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\Eticaret\\Eticaret\\obj\\",
+      "outputPath": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Muhammet Canlı\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,6 +6,7 @@ a.navbar-brand[b-0mrfxsn1jw] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  
 }
 
 a[b-0mrfxsn1jw] {
@@ -46,4 +47,5 @@ button.accept-policy[b-0mrfxsn1jw] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  background-color: black;
 }

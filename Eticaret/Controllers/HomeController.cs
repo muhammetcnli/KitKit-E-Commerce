@@ -20,18 +20,34 @@ public class HomeController : Controller
         if(!String.IsNullOrEmpty(searchString)){
             products = products.Where(p=>p.Name.ToLower().Contains(searchString)).ToList();
         }
-        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId","Name");
-        return View(products);
-
-        if(!String.IsNullOrEmpty(category)){
+         if(!String.IsNullOrEmpty(category) && category != "0"){
             products = products.Where(p=>p.CategoryId == int.Parse(category)).ToList();
+
         }
-        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId","Name");
-        return View(products);
+        var model = new ProductViewModel{
+            Products = products,
+            Categories = Repository.Categories,
+            SelectedCategory = category
+        };
+        return View(model);
     }
 
     public IActionResult Admin()
     {
         return View(Repository.Products);
     }
-}
+
+    [HttpGet]
+    public IActionResult Create(){
+
+        
+        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name");
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Product model){
+        Repository.CreateProduct(model);
+        return RedirectToAction("Admin");
+    }
+}   

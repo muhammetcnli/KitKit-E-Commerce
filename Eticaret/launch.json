@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": ".NET Core Launch (web)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "program": "$Eticaret/bin/Debug/net7.0/Eticaret.dll",
+        "args": [],
+        "cwd": "$Eticaret",
+        "stopAtEntry": false,
+        "serverReadyAction": {
+          "action": "openExternally",
+          "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+        },
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "sourceFileMap": {
+          "/Views": "$Eticaret/Views"
+        },
+        "logging": {
+          "engineLogging": false
+        },
+        "internalConsoleOptions": "openOnSessionStart"
+      }
+    ]
+  }

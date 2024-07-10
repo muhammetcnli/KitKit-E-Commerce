@@ -1,50 +1,47 @@
-﻿@model List<Product>
-<div class="row container">
+﻿@model ProductViewModel
 
-  <div class="d-flex justify-content-between align-items-center mb-5">
-        <div class="col-md-12 mb-3">
-          <form asp-controller="Home" asp-action="Index" method="get">
-            <div class="input-group">
-              <input type="text" name="searchString" class="form-control" placeholder="KitKit'te Ara" 
-                style="background-color: white;" 
-                onfocus="this.style.backgroundColor='aliceblue';" 
-                onblur="this.style.backgroundColor='white';">
-              <div class="input-group-append"> 
-              <button type="submit" class="btn btn-success">Ara</button>
-              </div>
-            </div>
-          </form>
-        </div>
-  </div>
-
-  <div class="card card-body my-3"> 
+  <div class="row container">
     <form asp-controller="Home" asp-action="Index" method="get">
       <div class="row">
         <div class="col-md-11">
-          <select name="category" class="form-select" asp-items="ViewBag.Categories">
+          <div class="input-group">
+          <input type="text" name="searchString" class="form-control" placeholder="KitKit'te Ara" 
+            style="background-color: white;" 
+              onfocus="this.style.backgroundColor='aliceblue';" 
+              onblur="this.style.backgroundColor='white';">
+            <div class="input-group-append "> 
+              <button type="submit" class="btn btn-success">Ara</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-11">
+          <select name="category" class="form-select" asp-items="@(new SelectList(Model.Categories, "CategoryId", "Name", Model.SelectedCategory))">
             <option value="0">Hepsi</option>
           </select>
         </div>
         <div class="col-md-1">
           <button type="submit" class="btn btn-success">Filtrele</button>
-      </div>
-    </div>
+        </div>
+        
+
+       </div>
     </form>
-  </div>
+
 
  
 
-
-    @foreach (var prd in Model){
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card" style="width: 18rem;">
-          <img src="~/img/@prd.Image" class="card-img-top img-fluid" style="max-height: 450px; object-fit: cover" alt="...">
+ 
+  @foreach (var prd in Model.Products){
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mt-3">
+          <div class="card" style="width: 15rem;">
+            <img src="~/img/@prd.Image" class="card-img-top img-fluid" style="max-height: 300px; object-fit: contain" alt="...">
               <div class="card-body">
-                <h5 class="card-title">@prd.Name</h5>
+                <p class="card-title">@prd.Name</p>
                 <p class="card-text">@prd.Price TL</p>
                 <a href="#" class="btn btn-primary">Detay</a>
               </div>
           </div>
         </div>
   }
-</div>
+  </div>
