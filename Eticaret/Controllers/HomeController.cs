@@ -158,4 +158,14 @@ public class HomeController : Controller
     }
     
 
+    public IActionResult EditProduct(List<Product> Products){
+        foreach (var product in Products)
+        {
+            Repository.EditIsActive(product);
+
+        }
+        return RedirectToAction("Admin");
+
+    }
+
 }   

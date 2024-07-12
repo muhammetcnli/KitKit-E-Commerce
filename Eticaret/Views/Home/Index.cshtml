@@ -33,6 +33,7 @@
 
  
   @foreach (var prd in Model.Products){
+        @if(@prd.IsActive){
         <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mt-3">
           <div class="card" style="width: 15rem;">
             <img src="~/img/@prd.Image" class="card-img-top img-fluid" style="max-height: 300px; background-color: #bbbfbf; object-fit: contain" alt="...">
@@ -41,7 +42,8 @@
                 <p class="card-text">@prd.Price TL</p>
                 <a href="#" class="btn btn-primary">Detay</a>
               </div>
-          </div>
-        </div>
+              </div>
+              </div>
+            }
   }
-  </div>
+  
