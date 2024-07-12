@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y2y/3k0iD+pxUa/eA5j/8oX77P23Fbb+uEiIO+MqB5g=",
+  "Hash": "qfC5AisWXAt/YbRFTL+l6GG0TxXVuJhUhFNBCY/8yxs=",
   "Source": "Eticaret",
   "BasePath": "_content/Eticaret",
   "Mode": "Default",
@@ -207,6 +207,25 @@
       "OriginalItemSpec": "wwwroot\\img\\14.webp"
     },
     {
+      "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\16c4c378-66bc-4085-b4f1-7428b97020ff.webp",
+      "SourceId": "Eticaret",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\",
+      "BasePath": "_content/Eticaret",
+      "RelativePath": "img/16c4c378-66bc-4085-b4f1-7428b97020ff.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\16c4c378-66bc-4085-b4f1-7428b97020ff.webp"
+    },
+    {
       "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\2.webp",
       "SourceId": "Eticaret",
       "SourceType": "Discovered",
@@ -224,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\2e485d59-2474-48eb-aa7f-e939c487838e.jpg",
+      "SourceId": "Eticaret",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\",
+      "BasePath": "_content/Eticaret",
+      "RelativePath": "img/2e485d59-2474-48eb-aa7f-e939c487838e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\2e485d59-2474-48eb-aa7f-e939c487838e.jpg"
     },
     {
       "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\3.webp",
@@ -281,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\5.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\5cde9a2c-553d-4b99-87dc-9505618a61fb.webp",
+      "SourceId": "Eticaret",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\",
+      "BasePath": "_content/Eticaret",
+      "RelativePath": "img/5cde9a2c-553d-4b99-87dc-9505618a61fb.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\5cde9a2c-553d-4b99-87dc-9505618a61fb.webp"
     },
     {
       "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\6.webp",
@@ -395,6 +452,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\d2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\e0326ad7-a222-4799-aa61-33c0952cd245.jpg",
+      "SourceId": "Eticaret",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\",
+      "BasePath": "_content/Eticaret",
+      "RelativePath": "img/e0326ad7-a222-4799-aa61-33c0952cd245.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\e0326ad7-a222-4799-aa61-33c0952cd245.jpg"
     },
     {
       "Identity": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\js\\site.js",
