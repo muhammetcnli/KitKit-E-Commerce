@@ -23,10 +23,12 @@
 
     <div class="mb-3">
         <label asp-for="CategoryId" class="form-label"></label>
-        <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories">
-            <option value="0">Seçiniz</option>
-            
-        </select>
+        <select name="CategoryId">
+    @foreach (var category in ViewBag.Categories)
+    {
+        <option value="@category.Value">@category.Text</option>
+    }
+</select>
     </div>
 
     <div class="mb-3 form-check">

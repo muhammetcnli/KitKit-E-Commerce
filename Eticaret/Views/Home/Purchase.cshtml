@@ -1,0 +1,62 @@
+@model Eticaret.Models.Product
+
+@{
+    ViewData["Title"] = "Satın Alma";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h1>@Model.Name</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="~/img/@Model.Image" class="img-fluid rounded" alt="@Model.Name" />
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="card-title">Fiyat: @Model.Price TL</h3>
+                            <button type="button" class="btn btn-success btn-lg btn-block mt-4" data-toggle="modal" data-target="#purchaseModal">
+                                Satın Al
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Geri Dön</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Purchase Modal -->
+<div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="purchaseModalLabel">Satın Alma Onayı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="purchaseForm" method="post" asp-action="CompletePurchase">
+                    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                    <div class="form-group">
+                        <label for="password">Şifre</label>
+                        <input type="password" class="form-control" id="password" name="Password" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Onayla</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/iiJ5B4yH4i1Rp+6Fv3f5wz9+1k5A4eznD0Zw5b" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+}

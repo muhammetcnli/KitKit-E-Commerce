@@ -1,0 +1,21 @@
+@model List<Eticaret.Models.Category>
+
+<h2>Available Categories</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>CategoryId</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.CategoryId</td>
+                <td>@category.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,12 +1,9 @@
-@model Product
+@model Eticaret.Models.Product
 
-<div>
-    <p>
-        @Model.Name isimli ürünü silmek istiyor musun ?
-        <form action="" method="post">
-            <input type="hidden" asp-for="@Model.ProductId">
-            <button type="submit" class="btn btn-danger">Evet</button>
-            <a asp-controller="Home" asp-action="Admin" class="btn btn-success">Hayır</a>
-        </form>
-    </p>
-</div>
+<h2>Silme İşlemi</h2>
+<h3>@Model.Name isimli ürünü silmek istiyor musunuz?</h3>
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="ProductId" />
+    <input type="submit" value="Evet" class="btn btn-danger" /> |
+    <a asp-action="Admin">Hayır, Geri dön</a>
+</form>

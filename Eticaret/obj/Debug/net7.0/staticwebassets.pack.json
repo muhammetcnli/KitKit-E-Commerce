@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\0d8bc913-d2ad-47ba-9624-77c7a799c7bf.webp",
+      "PackagePath": "staticwebassets\\img\\0d8bc913-d2ad-47ba-9624-77c7a799c7bf.webp"
+    },
+    {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\1.webp",
       "PackagePath": "staticwebassets\\img\\1.webp"
     },
@@ -37,16 +41,8 @@
       "PackagePath": "staticwebassets\\img\\14.webp"
     },
     {
-      "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\16c4c378-66bc-4085-b4f1-7428b97020ff.webp",
-      "PackagePath": "staticwebassets\\img\\16c4c378-66bc-4085-b4f1-7428b97020ff.webp"
-    },
-    {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\2.webp",
       "PackagePath": "staticwebassets\\img\\2.webp"
-    },
-    {
-      "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\2e485d59-2474-48eb-aa7f-e939c487838e.jpg",
-      "PackagePath": "staticwebassets\\img\\2e485d59-2474-48eb-aa7f-e939c487838e.jpg"
     },
     {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\3.webp",
@@ -59,10 +55,6 @@
     {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\5.webp",
       "PackagePath": "staticwebassets\\img\\5.webp"
-    },
-    {
-      "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\5cde9a2c-553d-4b99-87dc-9505618a61fb.webp",
-      "PackagePath": "staticwebassets\\img\\5cde9a2c-553d-4b99-87dc-9505618a61fb.webp"
     },
     {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\6.webp",
@@ -87,10 +79,6 @@
     {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\d2.webp",
       "PackagePath": "staticwebassets\\img\\d2.webp"
-    },
-    {
-      "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\img\\e0326ad7-a222-4799-aa61-33c0952cd245.jpg",
-      "PackagePath": "staticwebassets\\img\\e0326ad7-a222-4799-aa61-33c0952cd245.jpg"
     },
     {
       "Id": "C:\\Users\\Muhammet Canlı\\Documents\\GitHub\\KitKit\\Eticaret\\wwwroot\\js\\site.js",

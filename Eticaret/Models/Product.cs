@@ -26,5 +26,6 @@ namespace Eticaret.Models
         [Display(Name ="Kategorisi")]
         [Required]
         public int CategoryId {get;set;}
+        public Category? Category { get; set; }
     }
 }
