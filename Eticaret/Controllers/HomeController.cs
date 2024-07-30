@@ -93,7 +93,7 @@ public class HomeController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(Product model, IFormFile imageFile)
     {
-        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".webp" };
+        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".webp", ".PNG" };
         var extension = Path.GetExtension(imageFile.FileName);
         var randomFileName = string.Format($"{Guid.NewGuid().ToString()}{extension}");
         var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", randomFileName);
@@ -221,7 +221,15 @@ public async Task<IActionResult> DeleteConfirmed(int ProductId)
         return NotFound();
     }
 
-    
+    // Delete the associated image file from the server's file system
+    if (!string.IsNullOrEmpty(entity.Image))
+    {
+        var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", entity.Image);
+        if (System.IO.File.Exists(imagePath))
+        {
+            System.IO.File.Delete(imagePath);
+        }
+    }
 
     _context.Products.Remove(entity);
     await _context.SaveChangesAsync();
@@ -262,6 +270,17 @@ public async Task<IActionResult> CompletePurchase(int ProductId, string Password
     {
         try
         {
+            // Ürün resmini sil
+            if (!string.IsNullOrEmpty(product.Image))
+            {
+                var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", product.Image);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+            }
+
+            // Ürünü veritabanından sil
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
             TempData["PurchaseMessage"] = "Satın alma başarılı oldu ve ürün kaldırıldı!";
@@ -278,5 +297,10 @@ public async Task<IActionResult> CompletePurchase(int ProductId, string Password
         TempData["PurchaseMessage"] = "Hatalı şifre. Lütfen tekrar deneyin.";
         return RedirectToAction("Index");
     }
+}
+
+public IActionResult Privacy()
+{
+    return View();
 }
 }
